@@ -1,9 +1,3 @@
-function sumOfNum(...a){
-    let sum = 0;
-    let arr = [...a];
-    for (let i = 0; i < arr.length; i++){
-        sum += arr[i];
-    }
-    return sum;
-}
+let sumOfNum = (...a) => a.reduce((sum,current) => sum += current)   
+
 console.log(sumOfNum(1,2,3));
