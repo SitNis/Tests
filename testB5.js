@@ -3,7 +3,7 @@ let func = (...a) => {
     let firstNum = a[0]
     let outputArr = []
     let arr = []
-    for (let i = 1; i < a.length+1; i++){
+    for (let i = 1; i <= a.length; i++){
         if (a[i] == firstNum){
 
             arr.push(a[i])
