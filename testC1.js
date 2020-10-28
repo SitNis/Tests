@@ -57,11 +57,11 @@ class dict {
         delete(this.hash[key])
     }
 
-    set aChoOnDelaet(value){
-        this.hash[value] = this.hash[value] * 4
+    set getValue(key){
+        this.result = this.hash[key]
     }
-    get aChoOnDelaet(){
-        return this.hash
+    get getValue(){
+        return this.result
     }
 
 }
@@ -71,8 +71,9 @@ a.adder(1,3)
 a.adder(2,4)
 a.adder(3,5)
 
-a.aChoOnDelaet = 3
-console.log(a.aChoOnDelaet)
+a.getValue = 3
+console.log(a.hash)
+console.log(a.getValue)
 
 
 
